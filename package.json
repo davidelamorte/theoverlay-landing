@@ -2,6 +2,7 @@
   "name": "theoverlay-landing",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://theoverlay.org/",
   "dependencies": {
     "@types/jest": "24.0.11",
     "@types/node": "11.13.7",
@@ -17,6 +18,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
+    "predeploy": "yarn run build",
+    "deploy": "gh-pages -d build",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
